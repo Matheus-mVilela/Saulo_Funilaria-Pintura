@@ -1,6 +1,77 @@
 @charset "utf-8";
 
-header{
-    background-color: aqua;
-    width: 100px;
+@font-face{
+    font-family: 'fonte-home';
+    src: url(../_fonte/Lobster-Regular.ttf);
+}
+
+nav#menu{
+    background-color: rgb(11, 13, 37);
+    height: 100px;
+    width: 100%;
+    border-bottom: 1.5px solid red;
+}
+
+nav#menu ul{
+    width: 500px;
+    height: 100px;
+    display: block;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    margin-right: 20px;
+  
+}
+
+nav#menu ul li{
+    background-color: tomato;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 2px;
+    margin-top: 10px ;
+    border-radius: 5px;
+    font-family: 'fonte-home';
+    font-size: 17pt;
+    cursor: pointer;
+}
+
+nav#menu ul li:hover{
+    color: wheat;
+}
+
+img#icon-home{
+    width: 120px;
+    display:inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+}
+
+section#servicos{
+    height: 1000px;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.card{
+    
+    vertical-align: top !important;
+    display: inline-block !important;
+    text-align: justify !important;
+    margin-left: 3px !important;  
+}
+
+.btn-primary{
+    background-color: rgb(11, 13, 37) !important;
+    font-family: 'fonte-home' !important;
+    
+    
+}
+
+.btn-primary:hover{
+    text-decoration: none !important;
+    background-color: tomato !important;
+    color: black !important;
+    
 }
