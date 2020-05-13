@@ -5,6 +5,8 @@
     src: url(../_fonte/Lobster-Regular.ttf);
 }
 
+
+
 nav#menu{
     background-color: rgb(11, 13, 37);
     height: 100px;
@@ -46,6 +48,12 @@ img#icon-home{
     margin-top: 10px;
     
 }
+
+div#div-servicos{
+    text-align: center;
+}
+
+
 
 section#servicos{
     height: 1000px;
