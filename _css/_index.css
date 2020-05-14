@@ -9,7 +9,7 @@
 
 nav#menu{
     background-color: rgb(11, 13, 37);
-    height: 100px;
+    height: 90px;
     width: 100%;
     border-bottom: 1.5px solid red;
 }
@@ -45,7 +45,7 @@ img#icon-home{
     width: 120px;
     display:inline-block;
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 5px;
     
 }
 /*Estilização da navbar (fim)*/
@@ -55,7 +55,7 @@ img#icon-home{
 div#carrocel-home{
     width: 100%;
     display: inline-block;
-    margin-top: -17px;
+    margin-top: 89px;
 }
 
 .text-carrocel{
