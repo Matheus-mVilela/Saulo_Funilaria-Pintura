@@ -101,12 +101,12 @@ div#carrocel-home{
     color: tomato;
     background-color: rgb(11, 13, 37);
     border-radius: 20px;
+    transition: 1s;
 } 
 
 .btn-carrocel:hover{
     background-color: tomato;
     color: rgb(11, 13, 37);
-    transition: 1s;
 }
 
 .carousel-item img{
