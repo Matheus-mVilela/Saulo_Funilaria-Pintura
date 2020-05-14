@@ -5,7 +5,7 @@
     src: url(../_fonte/Lobster-Regular.ttf);
 }
 
-
+/*Estilização da navbar*/
 
 nav#menu{
     background-color: rgb(11, 13, 37);
@@ -48,38 +48,74 @@ img#icon-home{
     margin-top: 10px;
     
 }
-
-div#div-servicos{
-    text-align: center;
-}
+/*Estilização da navbar (fim)*/
 
 
-
-section#servicos{
-    height: 1000px;
+/*Estilização do carrocel */
+div#carrocel-home{
     width: 100%;
-    align-items: center;
+    display: inline-block;
+    margin-top: -17px;
+}
+
+.text-carrocel{
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    left: 200px;
+    top: 50px;
+    z-index: 100;
+    opacity: 1;
+}
+
+.text-carrocel h1{
+    text-transform: uppercase;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    color:tomato;
     
 }
 
-.card{
-    
-    vertical-align: top !important;
-    display: inline-block !important;
-    text-align: justify !important;
-    margin-left: 3px !important;  
+.text-carrocel h2{
+    text-transform: uppercase;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
 }
 
-.btn-primary{
-    background-color: rgb(11, 13, 37) !important;
-    font-family: 'fonte-home' !important;
-    
-    
+.text-carrocel h4{
+    font-weight: bold;
+    font-family: century;
+    font-size: 18px;
 }
 
-.btn-primary:hover{
-    text-decoration: none !important;
-    background-color: tomato !important;
-    color: black !important;
-    
+.btn-carrocel{
+    position: absolute;
+    top: 310px;
+    width: 500px;
+    height: 43px;
+    font-family:'fonte-home';
+    font-size: 27px;
+    text-align: center;
+    color: tomato;
+    background-color: rgb(11, 13, 37);
+    border-radius: 20px;
+} 
+
+.btn-carrocel:hover{
+    background-color: tomato;
+    color: rgb(11, 13, 37);
+    transition: 1s;
 }
+
+.carousel-item img{
+    z-index: 0;
+    opacity: 0.3;
+}
+/*Estilização do carrocel (fim)*/
+
+
+
+
+
