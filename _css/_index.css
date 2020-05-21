@@ -13,6 +13,8 @@
 /*Estilização da navbar*/
 
 nav#menu{
+    position: fixed;
+    z-index: 10000;
     background-color: rgb(11, 13, 37);
     height: 70px;
     width: 100%;
@@ -47,10 +49,9 @@ nav#menu ul li:hover{
 
 
 /*Estilização do carrocel */
-.meu-carrocel{
-    width: 100%;
-    height: 450px;
-    margin-top: 70px;
+
+section#home .carousel-inner {
+    padding-top: 70px;
 }
 
 .text-carrocel{
@@ -62,7 +63,6 @@ nav#menu ul li:hover{
     z-index: 100;
     opacity: 1;
 }
-
 
 .text-carrocel h1{
     text-transform: uppercase;
@@ -80,23 +80,20 @@ nav#menu ul li:hover{
     font-size: 22px;
 }
 
-.text-carrocel h4{
+.text-carrocel p{
     font-weight: bold;
     font-family: century;
     font-size: 18px;
 }
 
 .btn-carrocel{
-    position: absolute;
-    top: 310px;
-    width: 500px;
-    height: 43px;
+    padding: 10px 25px;
     font-family:'fonte-home';
     font-size: 27px;
     text-align: center;
     color: tomato;
     background-color: rgb(11, 13, 37);
-    border-radius: 20px;
+    border-radius: 50px;
     transition: 1s;
 } 
 
@@ -106,87 +103,33 @@ nav#menu ul li:hover{
 }
 
 .carousel-item img{
-    
     opacity: 0.3;
 }
+
 /*Estilização do carrocel (fim)*/
 
-
-/*Estilização servicos-home*/
-div#servicos-home{
-    width: 100%;
-    height: 1200px;
-    margin-top: -7px;
-    background-image: url(../_img/img-fundo-azul.jpg);
-    background-size: cover;
-    background-repeat: no-repeat ;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+section.bg-servico{
+    background-image: url('../_img/img-fundo-azul.jpg');
+    padding: 30px 0;
 }
 
-div#servicos-paragrafo{
-    width: 1200px;
-    height: 500px;
+.servico{
+    position: relative;
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+
     background-color: tomato;
+    border-radius: 20px;
+    padding: 20px;
+
     text-align: center;
-    margin-top: 40px;
-    color: white;
-    border-radius: 30px;
 }
 
-div#servicos-paragrafo h1{
-    font-size: 40pt;
-    font-family: 'fonte-home';
-}
-
-div#servicos-paragrafo p{
-    font-family: 'fonte-servicos';
-    font-size: 25pt;
-    margin-top: 40px;
-
-}
-/*Estilização servicos-home (fim)*/
-
-/*Estilização div-servicos*/
-div#div-servicos{
-    width: 100%;
-    height: 550px;
-    top: 1130px;
-    position: absolute;
+.servico-todas-card{
     display: flex;
     flex-direction: row;
     justify-content: center;
 
+    margin-top: 20px;
 }
-.card{
-    width: 320px !important;
-    height: 520px !important;
-    position: relative !important;
-    display: inline-block !important;
-    margin: 5px !important;
-    font-size: 10pt !important;
-    text-align: justify !important;
-}
-
-.btn{
-    width: 260px !important;
-    background-color:rgb(11, 13, 37) !important;
-    border: 1px solid red!important;
-    position: absolute!important;
-    text-align: center !important;
-    top: 460px !important;
-    align-items: center !important;
-    left: 30px !important;
-    font-size: 15pt !important;
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 900 !important;
-    color:white !important;
-}
-
-.btn:hover{
-    background-color:tomato !important;
-    color:black !important;
-}
-/*Estilização div-servicos*/
-
