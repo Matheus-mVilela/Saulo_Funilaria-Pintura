@@ -18,7 +18,6 @@ nav#menu{
     background-color: rgb(11, 13, 37);
     height: 70px;
     width: 100%;
-    border-bottom: 1.5px solid red;
 }
 
 nav#menu ul{
@@ -29,8 +28,8 @@ nav#menu ul{
 }
 
 nav#menu ul li{
-    width: 130px;
-    color: tomato;
+    width: 150px;
+    color:tomato;
     display: inline-block;
     padding: 5px;
     margin-left: 2px;
@@ -108,28 +107,56 @@ section#home .carousel-inner {
 
 /*Estilização do carrocel (fim)*/
 
+/*Estilização do div-servicos*/
+
+
+/*Estilização do div-servicos*/
+
 section.bg-servico{
-    background-image: url('../_img/img-fundo-azul.jpg');
+    background-color: rgb(11, 13, 37);
     padding: 30px 0;
 }
 
 .servico{
     position: relative;
-    width: 60vw;
-    height: 100%;
-    margin: 0 auto;
-
-    background-color: tomato;
-    border-radius: 20px;
+    width: 1000px;
     padding: 20px;
-
     text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid tomato;
 }
+
+.servico h1{
+    font-size: 50pt;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.servico p{
+    font-size: 18pt;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 800;
+}
+/*Estilização do card*/
 
 .servico-todas-card{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    height:530px;
     margin-top: 20px;
 }
+
+.card{
+    margin: 0 5px;
+}
+
+.card-body a{
+    position: absolute;
+    bottom: 12px;
+    background-color: rgb(11, 13, 37);
+    color: white;
+}
+
+/*Estilização do card (fim)*/
