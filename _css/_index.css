@@ -55,7 +55,7 @@ section#home .carousel-inner {
 
 .text-carrocel{
     position: absolute;
-    width: 600px;
+    width:550px;
     height: 350px;
     left: 240px;
     top: 70px;
@@ -69,6 +69,7 @@ section#home .carousel-inner {
     font-weight: bolder;
     font-size: 40px;
     color:tomato;
+    text-align: center;
     
 }
 
@@ -77,12 +78,14 @@ section#home .carousel-inner {
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: bolder;
     font-size: 20px;
+    text-align: center;
 }
 
 .text-carrocel p{
     font-weight: bold;
     font-family: century;
     font-size: 18px;
+    text-align: center;
 }
 
 .btn-carrocel{
@@ -95,6 +98,7 @@ section#home .carousel-inner {
     transition: 1s;
     position: absolute;
     top: 270px;
+    left: 20px;
 } 
 
 .btn-carrocel:hover{
@@ -110,20 +114,14 @@ section#home .carousel-inner {
      width: 350px;
      position: absolute;
      top:40px;
-     left: 750px;
+     left: 800px;
      z-index: 1000;
      
-     opacity: 1 !important;
-    
-
+     opacity: 1 !important;   
 }
 
 /*Estilização do carrocel (fim)*/
 
-/*Estilização do div-servicos*/
-
-
-/*Estilização do div-servicos*/
 
 section.bg-servico{
     background-color: rgb(11, 13, 37);
