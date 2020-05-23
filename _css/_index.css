@@ -55,10 +55,10 @@ section#home .carousel-inner {
 
 .text-carrocel{
     position: absolute;
-    width: 700px;
-    height: 300px;
-    left: 200px;
-    top: 50px;
+    width: 600px;
+    height: 350px;
+    left: 240px;
+    top: 70px;
     z-index: 100;
     opacity: 1;
 }
@@ -67,7 +67,7 @@ section#home .carousel-inner {
     text-transform: uppercase;
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 40px;
     color:tomato;
     
 }
@@ -76,7 +76,7 @@ section#home .carousel-inner {
     text-transform: uppercase;
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .text-carrocel p{
@@ -86,14 +86,15 @@ section#home .carousel-inner {
 }
 
 .btn-carrocel{
-    padding: 10px 25px;
+    padding: 5px 25px;
     font-family:'fonte-home';
     font-size: 27px;
     text-align: center;
     color: tomato;
     background-color: rgb(11, 13, 37);
-    border-radius: 50px;
     transition: 1s;
+    position: absolute;
+    top: 270px;
 } 
 
 .btn-carrocel:hover{
@@ -103,6 +104,18 @@ section#home .carousel-inner {
 
 .carousel-item img{
     opacity: 0.3;
+}
+
+ .img-logo{
+     width: 350px;
+     position: absolute;
+     top:40px;
+     left: 750px;
+     z-index: 1000;
+     
+     opacity: 1 !important;
+    
+
 }
 
 /*Estilização do carrocel (fim)*/
