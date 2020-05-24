@@ -207,3 +207,24 @@ section.bg-servico{
 }
 
 /*Nosso travalho (fim)*/
+
+/* ***** PIZZA GRID ***** */
+
+.nt-albumDeFotos {
+    margin-top: 45px;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: transform 0.5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/* ***** END PIZZA GRID ***** */
