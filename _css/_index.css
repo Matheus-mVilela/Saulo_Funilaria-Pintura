@@ -157,11 +157,12 @@ section.bg-servico{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height:530px;
+    height:500px;
     margin-top: 20px;
 }
 
 .card{
+    width: 400px !important; 
     margin: 0 5px;
 }
 
@@ -170,6 +171,9 @@ section.bg-servico{
     bottom: 12px;
     background-color: rgb(11, 13, 37);
     color: white;
+    border: none;
+    box-shadow: 5px 5px 3px #000;
+
 }
 
 /*Estilização do card (fim)*/
@@ -208,10 +212,10 @@ section.bg-servico{
 
 /*Nosso travalho (fim)*/
 
-/* ***** PIZZA GRID ***** */
+/* ***** Album de fotos ***** */
 
 .nt-albumDeFotos {
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 .img-wrapper {
@@ -227,4 +231,19 @@ section.bg-servico{
     cursor: zoom-in;
 }
 
-/* ***** END PIZZA GRID ***** */
+.img-wrapper span{
+    position: absolute;
+    width:250px;
+    top: 20px;
+    left: 45px;
+    background-color: tomato;
+    border-radius: 20px;
+    padding: 5px;
+
+    font-family: 'Fonte-home', sans-serif;
+    font-size: 16pt;
+    text-align: center  ;
+
+}
+
+/* ***** Album de fotos ***** */
