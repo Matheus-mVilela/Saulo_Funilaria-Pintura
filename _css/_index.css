@@ -231,19 +231,4 @@ section.bg-servico{
     cursor: zoom-in;
 }
 
-.img-wrapper span{
-    position: absolute;
-    width:250px;
-    top: 20px;
-    left: 45px;
-    background-color: tomato;
-    border-radius: 20px;
-    padding: 5px;
-
-    font-family: 'Fonte-home', sans-serif;
-    font-size: 16pt;
-    text-align: center  ;
-
-}
-
 /* ***** Album de fotos ***** */
