@@ -223,12 +223,17 @@ section.bg-servico{
 }
 
 .img-wrapper img {
-    transition: transform 0.5s ease;
+    transition: 0.5s ease;
 }
 
 .img-wrapper img:hover {
-    transform: scale(1.5);
+    opacity: 0.3;
+    transform: scale(0.8);
     cursor: zoom-in;
 }
 
 /* ***** Album de fotos ***** */
+
+.teste1{
+    display: none;
+}
