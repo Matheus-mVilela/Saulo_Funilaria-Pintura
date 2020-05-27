@@ -95,7 +95,7 @@ section#home .carousel-inner {
     transition: 1s;
     position: absolute;
     top: 270px;
-    left: 20px;
+    left: 55px;
 } 
 
 .btn-carrocel:hover{
@@ -336,7 +336,7 @@ footer{
     font-size: 8em;
     color:#fff;
     z-index: 10000;    
-    mix-blend-mode: overlay;
+    mix-blend-mode: o;
 }
 
 .videosFumaca video{
