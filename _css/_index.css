@@ -312,37 +312,3 @@ ul.social-list i {
 
 /* ***** END TEAM ***** */
 
-
-footer{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-.videosFumaca{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color:#000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.videosFumaca h2{
-    position: relative;
-    font-size: 8em;
-    color:#fff;
-    z-index: 10000;    
-    mix-blend-mode: o;
-}
-
-.videosFumaca video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
