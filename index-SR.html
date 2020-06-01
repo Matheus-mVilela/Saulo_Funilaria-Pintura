@@ -47,19 +47,32 @@
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+
+    <style>
+        .corBarra{
+            background-color: black;
+        }
+
+        .delBar{
+            opacity: 1;
+        }
+    </style>
+
+
 </head>
 
 
 <body>
-
+    <div class="master">
     <!-- INICIO BARRA DE MENU-->
-    <nav id="menu" class="navbar-home">
+    <nav id="menu" class="navbar-home" onmousemove="colorBar()" onmousedown="delBar()">
         <ul>
-            <li>Home</li>
-            <li>Serviços</li>
-            <li>Nosso Trabalho</li>
-            <li>Orçamento</li>
-            <li>Contato</li>
+            <li>HOME</li>
+            <li>SERVIÇOS</li>
+            <li>NOSSO TRABALHO</li>
+            <li>ORÇAMENTO</li>
+            <li>CONTATO</li>
         </ul>
     </nav>
     <!-- FINAL BARRA DE MENU-->
@@ -393,6 +406,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    </div> 
 </body>
 
 

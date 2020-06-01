@@ -24,3 +24,11 @@ $("#team-members").owlCarousel({
         },
     }
 });
+
+function colorBar(){
+    document.getElementById("menu").className = "corBarra";
+}
+
+function delBar(){
+    document.getElementById("menu").className = "delBar";
+}

@@ -10,11 +10,26 @@
     src: url(../_fonte/Bebas_Neue/BebasNeue-Regular.ttf);
 }
 
+.master{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.master:before{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background-color: rgba(0,0,0,0.6);
+}
+
+
 /*Estilização da navbar*/
 nav#menu{
     position: fixed;
     z-index: 10000;
-    background-color: rgb(11, 13, 37);
     height: 70px;
     width: 100%;
 }
@@ -27,15 +42,15 @@ nav#menu ul{
 }
 
 nav#menu ul li{
-    width: 150px;
-    color:rgb(0, 152, 253);
+    width: 220px;
+    color:white;
     display: inline-block;
     padding: 5px;
     margin-left: 2px;
     margin-top: 4px ;
     border-radius: 5px;
-    font-family: 'fonte-home';
-    font-size: 17pt;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
     cursor: pointer;
 }
 
@@ -55,7 +70,7 @@ section#home .carousel-inner {
     width:550px;
     height: 350px;
     left: 240px;
-    top: 70px;
+    top: 80px;
     z-index: 100;
     opacity: 1;
 }
@@ -65,7 +80,7 @@ section#home .carousel-inner {
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: bolder;
     font-size: 40px;
-    color:tomato;
+    color:white;
     text-align: center;
     
 }
@@ -76,6 +91,7 @@ section#home .carousel-inner {
     font-weight: bolder;
     font-size: 20px;
     text-align: center;
+    color: white;
 }
 
 .text-carrocel p{
@@ -83,6 +99,7 @@ section#home .carousel-inner {
     font-family: century;
     font-size: 18px;
     text-align: center;
+    color: white;
 }
 
 .btn-carrocel{
@@ -90,7 +107,7 @@ section#home .carousel-inner {
     font-family:'fonte-home';
     font-size: 27px;
     text-align: center;
-    color: tomato;
+    color:white;
     background-color: rgb(11, 13, 37);
     transition: 1s;
     position: absolute;
@@ -99,12 +116,12 @@ section#home .carousel-inner {
 } 
 
 .btn-carrocel:hover{
-    background-color: tomato;
-    color: rgb(11, 13, 37);
+    background-color: black;
+    color:white;
 }
 
 .carousel-item img{
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
  .img-logo{
@@ -116,11 +133,12 @@ section#home .carousel-inner {
      
      opacity: 1 !important;   
 }
+
 /*Estilização do carrocel (fim)*/
 
 /*Estiização section de serviços*/
 section.bg-servico{
-    background-color: rgb(11, 13, 37);
+
     padding: 30px 0;
 }
 
@@ -312,15 +330,22 @@ ul.social-list i {
 
 /* ***** END TEAM ***** */
 
+section#mapa{
+    z-index: 10000;
+}
 
 .local{
     width: 100%;
     height: 500px;
-    background-color: aquamarine;
-    
+    z-index: 10000;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
+}
+
+.local iframe{
+    z-index: 10000;
 }
