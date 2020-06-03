@@ -12,23 +12,27 @@ $("#team-members").owlCarousel({
     smartSpeed: 700,
     loop: true,
     autoplayHoverPause: true,
-    responsive:{
-        0:{
+    responsive: {
+        0: {
             items: 1
         },
-        480:{
+        480: {
             items: 2
         },
-        768:{
+        768: {
             items: 3
         },
     }
 });
 
-function colorBar(){
-    document.getElementById("menu").className = "corBarra";
+function colorBar(id) {
+    if (id == "move") {
+        document.getElementById("menu").className = "corBarra";
+    } else if(id == "dow"){
+        document.getElementById("menu").className = "corBarra2";
+
+    }
 }
 
-function delBar(){
-    document.getElementById("menu").className = "delBar";
-}
+
+
