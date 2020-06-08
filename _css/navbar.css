@@ -11,20 +11,23 @@ nav#menu ul{
     width: 100%;
     height: 70px;
     padding: 10px;
-    text-align: center;
+    text-align: center;   
 }
 
 nav#menu ul li{
     width: 220px;
     color:white;
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     margin-left: 2px;
-    margin-top: 4px ;
+    margin-top: 2px ;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 15pt;
     cursor: pointer;
+
+
+    background-color: rgba(80,80,80, 0.3);
 }
 
 nav#menu ul li:hover{

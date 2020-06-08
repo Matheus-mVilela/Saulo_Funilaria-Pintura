@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="_css/_index.css">
     <link rel="stylesheet" type="text/css" href="_css/navbar.css">
-    <link rel="stylesheet"  type ="text/css" href="_css/carrocelbaner.css">
-    <link rel="stylesheet"  type ="text/css" href="_css/servicoscard.css">
-    <link rel="stylesheet"  type="text/css" href="_css/nossotrabalho.css">
-    <link rel="stylesheet"  type="text/css" href="_css/timeseguradoras.css">
+    <link rel="stylesheet" type="text/css" href="_css/carrocelbaner.css">
+
+    <link rel="stylesheet" type="text/css" href="_css/nossotrabalho.css">
+    <link rel="stylesheet" type="text/css" href="_css/timeseguradoras.css">
+    <link rel="stylesheet" href="_css/localizacao.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -54,14 +54,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 
 
-   
+
 
 
 </head>
 
 
 <body>
-    <div class="master">
+
     <!-- INICIO BARRA DE MENU-->
     <nav id="menu" class="navbar-home" onmousemove="colorBar('move')" onclick="colorBar('dow')">
         <ul>
@@ -76,156 +76,77 @@
 
 
     <!-- INICIO CARROCEL-->
-    <section id="home">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="text-carrocel">
-                        <h1>Bem vindo a oficina <br> saulo&rubinho</h1> <br>
-                        <h2>A melhor opção de Fartura e Região</h2>
-                        <p>
-                            É com grande satisfação que a Oficina S&R oferece ao <br>
-                            seus cliente serviços que além de atender as suas <br>
-                            necessidades traz também satisfação e conforto.
-                        </p>
+    <div class="master">
+        <section id="home">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-carrocel">
+                            <h1>Bem vindo a oficina <br> saulo&rubinho</h1> <br>
+                            <h2>A melhor opção de Fartura e Região</h2>
+                            <p>
+                                É com grande satisfação que a Oficina S&R oferece ao <br>
+                                seus cliente serviços que além de atender as suas <br>
+                                necessidades traz também satisfação e conforto.
+                            </p>
 
-                        <a class="btn-carrocel"
-                            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=oficina_saulo@gmail.com"
-                            target="_blank">Faça um orçamento sem compromiso</a>
+                            <a class="btn-carrocel"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=oficina_saulo@gmail.com"
+                                target="_blank">Faça um orçamento sem compromiso</a>
+                        </div>
+                        <img class="img-logo" src="_img/img-logo-cartao.jpg" alt="">
+                        <img src="_img/img-painel_sr.png" class="d-block w-100" alt="...">
                     </div>
-                    <img class="img-logo" src="_img/img-logo-cartao.jpg" alt="">
-                    <img src="_img/img-painel_sr.png" class="d-block w-100" alt="...">
-                </div>
 
-                <div class="carousel-item">
-                    <div class="text-carrocel">
-                        <h1>Responsabilidade</h1>
-                        <h2>Atendimento diferenciado</h2>
-                        <br>
-                        <p>Respeitando sempre os prazos trazemos uma experiência
-                            de mais de 30 anos em serviços de funilaria e pintura. <br> Aqui você encontrará serviços
-                            especializados e
-                            verá que podemos fazer o melhor para você.</p>
+                    <div class="carousel-item">
+                        <div class="text-carrocel">
+                            <h1>Responsabilidade</h1>
+                            <h2>Atendimento diferenciado</h2>
+                            <br>
+                            <p>Respeitando sempre os prazos trazemos uma experiência
+                                de mais de 30 anos em serviços de funilaria e pintura. <br> Aqui você encontrará
+                                serviços
+                                especializados e
+                                verá que podemos fazer o melhor para você.</p>
+                        </div>
+                        <img class="img-logo" src="_img/img-logo-contato.png" alt="">
+                        <img src="_img/img_carro_batido.png" class="d-block w-100" alt="...">
                     </div>
-                    <img class="img-logo" src="_img/img-logo-contato.png" alt="">
-                    <img src="_img/img_carro_batido.png" class="d-block w-100" alt="...">
-                </div>
 
-                <div class="carousel-item">
-                    <div class="text-carrocel">
-                        <h1>Qualidade e <br> Modernização</h1>
-                        <h2>Proficionais Capacitados</h2>
-                        <br>
-                        <p>Nossa preocupação em manter a qualidade no atendimento e nos serviços é o que consolida nossa
-                            oficina no mercado há muitos anos. Pintores e funileiros de confiança e altamente
-                            capacitados, peças
-                            genuínas e preço justo é aqui. </p>
+                    <div class="carousel-item">
+                        <div class="text-carrocel">
+                            <h1>Qualidade e <br> Modernização</h1>
+                            <h2>Proficionais Capacitados</h2>
+                            <br>
+                            <p>Nossa preocupação em manter a qualidade no atendimento e nos serviços é o que consolida
+                                nossa
+                                oficina no mercado há muitos anos. Pintores e funileiros de confiança e altamente
+                                capacitados, peças
+                                genuínas e preço justo é aqui. </p>
+                        </div>
+                        <img class="img-logo" src="_img/img-selodequalidade.png" alt="">
+                        <img src="_img/img-qualidadecarro.png" class="d-block w-100" alt="...">
                     </div>
-                    <img class="img-logo" src="_img/img-selodequalidade.png" alt="">
-                    <img src="_img/img-qualidadecarro.png" class="d-block w-100" alt="...">
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- FINAL CARROCEL-->
-
-
-    <!-- INICIO SERVICO -->
-    <section class="bg-servico">
-        <div class="servico">
-            <h1>Serviços</h1>
-            <br>
-            <p>A Funilaria e Pintura S&R já está a mais de 30 anos no mercado, conta com
-                profissionais <br> qualificados e treinados para realizar o melhor em seu veículo.</p>
-
-            <p>Com ampla experiência nos veículos das diversas marcas do mercado realiza serviços <br>
-                particular e também através de seguros.</p>
-
-            <p> Trabalhamos com todos os tipos de carros, caminhonetes e SUV. <br> Fazendo qualquer tipo de
-                reparo ou
-                retoque.</p>
-        </div>
-
-        <div class="servico-todas-card">
-            <div class="card" style="width: 18rem;">
-                <img src="_img/img-funilaria.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Funilaria</h5>
-                    <p class="card-text">Este serviço consiste em técnicas para consertar peças de lataria
-                        de um
-                        veículo. Ou seja, peças que sofreram algum problema são retiradas e consertadas pelo
-                        funileiro.
-                        Em alguns casos não há possibilidade de reparo ...</p>
-                    <a href="http://www.ponteirasrodrigues.com.br/noticia/o-que-e-funilaria-automotiva/" target="blank"
-                        class="btn btn-primary">Descrição Completa</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="_img/img-pintura.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pintura</h5>
-                    <p class="card-text">Pintores Automotivos preparam as superfícies para receber a
-                        pintura, que
-                        pode
-                        envolver a realização de pequenos reparos; depois aplicam as subcamadas, camadas com
-                        cor e o
-                        selador, que fornece o alto nível de brilho exigido.
-                    </p>
-                    <a href="http://archive.worldskills.org/201503_WSC2015/pt/competicao/ocupacoes/393/index.html"
-                        target="blak" class="btn btn-primary">Descrição Completa</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="_img/img-polimento.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Polimento</h5>
-                    <p class="card-text">O polimento é uma técnica mais antiga e conhecida dos motoristas.
-                        Ela é
-                        perfeita para quem está com manchas na pintura, riscos pouco profundos, queimaduras
-                        de sol,
-                        manchas de dejetos de pássaros, carros repintados ou que ...
-                    </p>
-                    <a href="https://www.meuportoseguro.com.br/meu-carro/dicas-para-carro/polimento-ou-cristalizacao-saiba-de-qual-procedimento-o-seu-carro-precisa/"
-                        target="blank" class="btn btn-primary">Descrição Completa</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="_img/img-cristalizacao.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Cristalização</h5>
-                    <p class="card-text">A cristalização, também conhecida como espelhamento, está ganhando
-                        mais
-                        espaço
-                        nos últimos anos. Ela consiste na aplicação de uma espécie de resina, que forma uma
-                        camada
-                        de
-                        proteção sobre a pintura do carro.</p>
-                    <a href="https://www.meuportoseguro.com.br/meu-carro/dicas-para-carro/polimento-ou-cristalizacao-saiba-de-qual-procedimento-o-seu-carro-precisa/"
-                        class="btn btn-primary">Descrição Completa</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- FINAL SERVICO -->
-
 
     <!-- INICIO NOSSO TRABALHO -->
     <section class="nossoTrabalho">
         <div class="nt-textDiv">
             <h1>Você ja conhece nosso trabalho ?</h1>
             <br>
-            <p>Temos o orgulho de mostrar alguns de nossos trabalhos. Confira e veja que somos a melhor opção pra
+            <p>Temos o orgulho de mostrar alguns de nossos trabalhos. br Confira e veja que somos a melhor opção pra
                 atender sua necessidade.</p>
         </div>
 
@@ -270,122 +191,57 @@
 
                         </div>
                     </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="_img/grid1.jpg" title="Divida a pizza com sua(e) parceira(o)">
+                                <i class="fa fa-hand-point-up"></i>
+                                <img src="_img/grid1.jpg" class="img-responsive">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="_img/grid1.jpg" title="Divida a pizza com sua(e) parceira(o)">
+                                <i class="fa fa-hand-point-up"></i>
+                                <img src="_img/grid1.jpg" class="img-responsive">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="_img/grid1.jpg" title="Divida a pizza com sua(e) parceira(o)">
+                                <i class="fa fa-hand-point-up"></i>
+                                <img src="_img/grid1.jpg" class="img-responsive">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-3">
+                        <div class="img-wrapper">
+                            <a href="_img/grid1.jpg" title="Divida a pizza com sua(e) parceira(o)">
+                                <i class="fa fa-hand-point-up"></i>
+                                <img src="_img/grid1.jpg" class="img-responsive">
+                            </a>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- FINAL NOSSO TRABALHO -->
 
-    <!--INICIO SEGURADORAS QUE ATENDEMOS-->
-    <!-- TEAM -->
-    <section class="teams">
-        <div class="container text-center">
-            <h2 class="title">Seguradoras que atendemos</h2>
-            <p> Nossa equipe cuida do seu veiculo! <br>
-                Nossa intenção é fazer o melhor para você!</p>
-        </div>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="team-members" class="owl-carousel owl-theme">
-                        <div class="team-member">
-                            <img src="_img/team-1.jpg" class="img-responsive">
-                            <div class="team-member-info text-center">
-                                <h4 class="team-member-name">Mary</h4>
-                                <h4 class="team-member-designation">Proprietária</h4>
-                                <ul class="social-list">
-                                    <li><a class="social-icon icon-gray" href="https://www.facebook.com/"
-                                            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.twitter.com/"
-                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.instagram.com/"
-                                            target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="_img/team-2.jpg" class="img-responsive">
-                            <div class="team-member-info text-center">
-                                <h4 class="team-member-name">Myke</h4>
-                                <h4 class="team-member-designation">Pizzaiolo</h4>
-                                <ul class="social-list">
-                                    <li><a class="social-icon icon-gray" href="https://www.facebook.com/"
-                                            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.twitter.com/"
-                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.instagram.com/"
-                                            target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="_img/team-3.jpg" class="img-responsive">
-                            <div class="team-member-info text-center">
-                                <h4 class="team-member-name">Malko</h4>
-                                <h4 class="team-member-designation">Pizzaiolo</h4>
-                                <ul class="social-list">
-                                    <li><a class="social-icon icon-gray" href="https://www.facebook.com/"
-                                            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.twitter.com/"
-                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.instagram.com/"
-                                            target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="_img/team-4.jpg" class="img-responsive">
-                            <div class="team-member-info text-center">
-                                <h4 class="team-member-name">Jonas</h4>
-                                <h4 class="team-member-designation">Entregador</h4>
-                                <ul class="social-list">
-                                    <li><a class="social-icon icon-gray" href="https://www.facebook.com/"
-                                            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.twitter.com/"
-                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.instagram.com/"
-                                            target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="team-member">
-                            <img src="_img/team-5.jpg" class="img-responsive">
-                            <div class="team-member-info text-center">
-                                <h4 class="team-member-name">Peter</h4>
-                                <h4 class="team-member-designation">Balconista</h4>
-                                <ul class="social-list">
-                                    <li><a class="social-icon icon-gray" href="https://www.facebook.com/"
-                                            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.twitter.com/"
-                                            target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="social-icon icon-gray" href="https://www.instagram.com/"
-                                            target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--INICIO SEGURADORAS QUE ATENDEMOS-->
 
 
 
-    <section class="mapa">
-        <div class="local">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1830.9882338770274!2d-49.51629794418159!3d-23.38906856113642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c1a547403f25db%3A0x41179885ede8bf95!2sR.%20Ant%C3%B4nio%20Vi%C3%AAira%20Rocha%2C%20265%2C%20Fartura%20-%20SP%2C%2018870-000!5e0!3m2!1spt-BR!2sbr!4v1590590949556!5m2!1spt-BR!2sbr"
-                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" 
-                tabindex="0"></iframe>
-        </div>
-    </section>
+
 
     <footer>
 
@@ -403,7 +259,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    </div> 
+
 </body>
 
 
