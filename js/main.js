@@ -25,14 +25,20 @@ $("#team-members").owlCarousel({
     }
 });
 
-function colorBar(id) {
-    if (id == "move") {
-        document.getElementById("menu").className = "corBarra";
-    } else if(id == "dow"){
-        document.getElementById("menu").className = "corBarra2";
+const target = document.querySelectorAll('[data-anime]');
+const animationClass = 'animate';
 
-    }
+function animeScroll(){
+    const windowtop = window.pageYOffset;
+    target.forEach(function(element){
+        if(windowtop > element.offsetTop){
+            element.classList.add(animationClass);
+        }
+
+        console.log(element.offsetTop);
+    })
 }
 
-
-
+window.addEventListener('scroll', function(){
+    animeScroll();
+})
