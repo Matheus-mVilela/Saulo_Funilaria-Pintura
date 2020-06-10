@@ -45,3 +45,22 @@ function animeScroll(){
 window.addEventListener('scroll', function(){
     animeScroll();
 })
+
+
+const serv = document.querySelectorAll('[data-animacao]');
+const animacaoClass = 'animacao';
+
+function scrollDown(){
+    const pagetop = window.pageYOffset + ((window.innerHeight * 3)/4);
+    serv.forEach(function(elemento){
+        if(pagetop > elemento.offsetTop){
+            elemento.classList.add(animacaoClass);
+        }else{elemento.classList.remove(animacaoClass);
+        }
+        console.log(elemento.offsetTop);
+    })
+}
+
+window.addEventListener('scroll', function(){
+    scrollDown();
+})
