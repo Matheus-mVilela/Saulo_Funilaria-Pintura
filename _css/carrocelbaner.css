@@ -7,6 +7,12 @@
 }
 
 
+:root{
+    --corpadrao: rgb(16,32,48);
+    --corsecundaria:rgb(0, 0, 34);
+    --RoyalBlue:rgb(65, 105, 225);
+}
+
 section#home .carousel-inner {
     padding-top: 0px;
 }
@@ -54,7 +60,7 @@ section#home .carousel-inner {
     font-size: 27px;
     text-align: center;
     color:white;
-    background-color: rgb(11, 13, 37);
+    background-color: var(--corpadrao);
     transition: 1s;
     position: absolute;
     top: 270px;
@@ -62,8 +68,8 @@ section#home .carousel-inner {
 } 
 
 .btn-carrocel:hover{
-    background-color: rgb(128, 128, 128);
-    color:rgb(2, 255, 242);
+    background-color: white;
+    color: var(--corpadrao);
 }
 
 .carousel-item img{

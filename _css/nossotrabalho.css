@@ -3,7 +3,10 @@
 :root{
     --corpadrao: rgb(16,32,48);
     --corsecundaria:rgb(0, 0, 34);
+    --RoyalBlue:rgb(65, 105, 225);
+    --LightSteelBlue:rgb(176 ,196 ,222);
 }
+
 
 .nossoTrabalho{
     width: 100%;
@@ -11,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image:linear-gradient(to bottom right, var(--corpadrao), var(--corsecundaria));
+    background-image:linear-gradient(to bottom right, var(--LightSteelBlue), var(--corsecundaria));
 }
 
 .nt-textDiv{
@@ -61,12 +64,12 @@
 
 .img-wrapper i {
     position: absolute;
-    color:rgb(2, 255, 242);
+    color:var(--RoyalBlue);
     padding: 5px 8px;
     font-size: 22px;
     right:6px;
     top: 6px;
-    border: 1px solid rgb(2, 255, 242);
+    border: 1px solid var(--RoyalBlue);
     border-radius: 50%;
     transform: rotate(-25deg);
 }

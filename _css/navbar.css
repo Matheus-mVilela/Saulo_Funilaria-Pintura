@@ -3,13 +3,16 @@
 
 :root{
     --corpadrao: rgb(16,32,48);
+    --corsecundaria:rgb(0, 0, 34);
+    --RoyalBlue:rgb(65, 105, 225);
+    --LightSteelBlue:rgb(176 ,196 ,222);
 }
 
 
 nav#menu{
     position: fixed;
     z-index: 10000;
-    height: 70px;
+    height: 80px;
     width: 100%;
 }
 
@@ -27,20 +30,20 @@ nav#menu ul li{
     display: inline-block;
     padding: 1.5px;
     margin-left: 2px;
-    margin-top: 10px ;
+    margin-top: 15px ;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
     cursor: pointer;
 
 
-    background-color: rgba(80,80,80, 0.2);
+    background-color: rgba(80,80,80, 0.3);
 }
 
 nav#menu ul li:hover{
-    color:black;
-    background-color:white;
-    border-radius: 10px solid black;
+    color: white;
+    background-color:var(--LightSteelBlue) ;
+    border-radius: 5px
 }  
 
 [data-anime] {
@@ -50,6 +53,6 @@ nav#menu ul li:hover{
 
 [data-anime="down"].animate{
     background-color:white;
-    box-shadow: black;
+    
 }
 

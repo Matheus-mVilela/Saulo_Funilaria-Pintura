@@ -51,7 +51,7 @@ const serv = document.querySelectorAll('[data-animacao]');
 const animacaoClass = 'animacao';
 
 function scrollDown(){
-    const pagetop = window.pageYOffset + ((window.innerHeight * 3)/4);
+    const pagetop = window.pageYOffset + ((window.innerHeight * 2.5)/4);
     serv.forEach(function(elemento){
         if(pagetop > elemento.offsetTop){
             elemento.classList.add(animacaoClass);
