@@ -3,12 +3,14 @@ section {
 }
 
 h2.title {
-    margin-top: 35px;
     font-weight: 900;
-    font-size: 28pt;
+    font-size: 35pt;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
 p.sub-title {
+    font-size: 15pt;
     margin-bottom: 40px;
 }
 
