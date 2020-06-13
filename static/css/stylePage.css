@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+:root{
+    --corpadrao: rgb(16,32,48);
+    --corsecundaria:rgb(0, 0, 34);
+    --RoyalBlue:rgb(65, 105, 225);
+    --LightSteelBlue:rgb(176 ,196 ,222);
+}
+
+
+/*Style NAVBAR */
+
+nav#menu{
+    position: fixed;
+    z-index: 10000;
+    height: 80px;
+    width: 100%;
+}
+
+nav#menu ul{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    text-align: center; 
+
+}
+
+nav#menu ul li{
+    width: 150px;
+    color:white;
+    display: inline-block;
+    padding: 1.5px;
+    margin-left: 2px;
+    margin-top: 15px ;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    cursor: pointer;
+
+
+    background-color: rgba(80,80,80, 0.3);
+}
+
+nav#menu ul li:hover{
+    color: white;
+    background-color:var(--LightSteelBlue) ;
+    border-radius: 5px
+}  
+
+[data-anime] {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+[data-anime="down"].animate{
+    background-color:white;
+    
+}
+
+
+/*--------------------------*/
+
+/*Style Carrocel*/
+
+@font-face{
+    font-family: 'fonte-home';
+    src: url(../_fonte/Lobster/Lobster-Regular.ttf);
+}
+
+
+section#home .carousel-inner {
+    padding-top: 0px;
+}
+
+.text-carrocel{
+    position: absolute;
+    width:550px;
+    height: 350px;
+    left: 240px;
+    top: 120px;
+    z-index: 100;
+    opacity: 1;
+}
+
+.text-carrocel h1{
+    text-transform: uppercase;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color:white;
+    text-align: center;
+    
+}
+
+.text-carrocel h2{
+    text-transform: uppercase;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.text-carrocel p{
+    font-weight: bold;
+    font-family: century;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.btn-carrocel{
+    padding: 5px 25px;
+    font-family:'fonte-home';
+    font-size: 27px;
+    text-align: center;
+    color:white;
+    background-color: var(--corpadrao);
+    transition: 1s;
+    position: absolute;
+    top: 270px;
+    left: 55px;
+} 
+
+.btn-carrocel:hover{
+    background-color: white;
+    color: var(--corpadrao);
+}
+
+.carousel-item img{
+    opacity: 0.4;
+}
+
+ .img-logo{
+     width: 350px;
+     position: absolute;
+     top:80px;
+     left: 800px;
+     z-index: 1000;
+     
+     opacity: 1 !important;   
+}
+
+.master{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.master:before{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background-color: rgb(11, 13, 37);
+}
+
+/*--------------------------*/
+
+/*Style Nosso Trabalho*/
+
+.nossoTrabalho{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:linear-gradient(to bottom right, var(--LightSteelBlue), var(--corsecundaria));
+}
+
+.nt-textDiv{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 25px;
+    text-align: center;   
+    
+    border-radius: 0px;
+}
+
+
+
+.nt-textDiv h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 35pt;
+    color: white;
+}
+
+.nt-textDiv p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(11, 13, 37);
+    font-size: 16pt;
+    color: white;
+}
+
+.nt-albumDeFotos {
+    margin-top: 40px;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    transition: 0.5s ease;
+}
+
+.img-wrapper img:hover {
+    opacity: 0.3;
+    transform: scale(0.8);
+    cursor: zoom-in;
+}
+
+.img-wrapper i {
+    position: absolute;
+    color:var(--RoyalBlue);
+    padding: 5px 8px;
+    font-size: 22px;
+    right:6px;
+    top: 6px;
+    border: 1px solid var(--RoyalBlue);
+    border-radius: 50%;
+    transform: rotate(-25deg);
+}
+
+
+[data-animacao]{
+    opacity: 0;
+    transition: 0.8s;
+}
+
+[data-animacao ="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-animacao ="rigth"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animacao].animacao{
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
+    
+}
+
+/*--------------------------*/
+
+/*Style Seguradoras*/
+section.teams {
+    padding-bottom: 50px;
+}
+
+section.teams h2.title {
+    padding-bottom: 0;
+}
+
+.team-member {
+    margin: 0 15px;
+    margin-top: 20px;
+}
+
+.team-member-info {
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.team-member-designation {
+    text-transform: capitalize;
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+ul.social-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.social-list li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+ul.social-list i {
+    font-size: 17px;
+}
+
+.icon-gray i {
+    color: #64707b;
+}
+
+.seguradoras{
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+    background-color:rgb(11, 13, 37);
+}
+ /*--------------------------*/
+
+ /*Style Localização*/
+
+.mapa{
+    z-index: 10000;
+}
+
+.local{
+    width: 100%;
+    height: 500px;
+    z-index: 10000;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.local iframe{
+    z-index: 10000;
+}
+ /*--------------------------*/
+
+/***************************** FOOTER *****************************/
+
+.footer {
+    background-image: url('img/Black-Wood-Footer-Background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 145px;
+    padding-bottom: 120px;
+}
+
+.social-icon a {
+    margin: 0 16px 20px 16px;
+    display: inline-block;
+}
+
+.footer .fa {
+    font-size: 30px;
+    color: deepskyblue;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    line-height: 2;
+    border: 10px solid #34495e;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.social-icon a:hover .fa {
+    border-color: white;
+    transform: rotate(360deg);
+}
+
+.copyright {
+    color: white;
+}
+
+.copyright .border-bottom {
+    background-color: white;
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/*--------------------------*/
