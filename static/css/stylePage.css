@@ -22,7 +22,7 @@ h2.sub-title{
 /*Style Carrocel*/
 
 section#home .carousel-item {
-    height: 75vh;
+    height: 100%;
     background-color: black;
 }
 
@@ -71,6 +71,7 @@ section#home .carousel-item {
     background-color:rgb(11, 13, 37);
     color: white;
     text-decoration: none;
+    border: 1px solid white;
 }
 
 .img-logo {
@@ -118,6 +119,7 @@ section.teams {
     padding-bottom: 30px;
     background-color: #131633;
     color: white;
+    margin-bottom: 0px;
 }
 
 section.teams h2.title {
@@ -165,22 +167,8 @@ ul.social-list i {
 
 /*Style Localização*/
 
-.mapa {
-    z-index: 10000;
-}
-
-.local {
-    width: 100%;
-    height: 500px;
-    z-index: 10000;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.local iframe {
-    z-index: 10000;
+section.mapa{
+    margin-bottom: -5px;
 }
 
 /*--------------------------*/
@@ -188,7 +176,7 @@ ul.social-list i {
 /***************************** FOOTER *****************************/
 
 .footer {
-    background-image: url('img/Black-Wood-Footer-Background.jpg');
+    background-image: url('../img/Black-Wood-Footer-Background.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding-top: 145px;
@@ -200,7 +188,7 @@ ul.social-list i {
     display: inline-block;
 }
 
-.footer .fa {
+.footer .icone-midiasocial {
     font-size: 30px;
     color: deepskyblue;
     background-color: white;
@@ -214,7 +202,7 @@ ul.social-list i {
     transition: all 0.7s ease-in-out;
 }
 
-.social-icon a:hover .fa {
+.social-icon a:hover .icone-midiasocial {
     border-color: white;
     transform: rotate(360deg);
 }
