@@ -1,4 +1,4 @@
-$('.nt-albumDeFotos').magnificPopup({
+$('.img-wrapper').magnificPopup({
     delegate: 'a',
     type: 'image',
     gallery: {

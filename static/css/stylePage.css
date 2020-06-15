@@ -1,256 +1,123 @@
 @charset "utf-8";
 
-:root{
-    --corpadrao: rgb(16,32,48);
-    --corsecundaria:rgb(0, 0, 34);
-    --RoyalBlue:rgb(65, 105, 225);
-    --LightSteelBlue:rgb(176 ,196 ,222);
+section{
+    margin-bottom: 30px;
+}
+
+h1.title{
+    padding-top:20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 
-/*Style NAVBAR */
-
-nav#menu{
-    position: fixed;
-    z-index: 10000;
-    height: 80px;
-    width: 100%;
+h2.sub-title{
+    margin-bottom: 25px;
+    font-size: 14pt;
+   
 }
-
-nav#menu ul{
-    width: 100%;
-    height: 80px;
-    padding: 10px;
-    text-align: center; 
-
-}
-
-nav#menu ul li{
-    width: 150px;
-    color:white;
-    display: inline-block;
-    padding: 1.5px;
-    margin-left: 2px;
-    margin-top: 15px ;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12pt;
-    cursor: pointer;
-
-
-    background-color: rgba(80,80,80, 0.3);
-}
-
-nav#menu ul li:hover{
-    color: white;
-    background-color:var(--LightSteelBlue) ;
-    border-radius: 5px
-}  
-
-[data-anime] {
-    opacity: 1;
-    transition: 0.6s;
-}
-
-[data-anime="down"].animate{
-    background-color:white;
-    
-}
-
-
 /*--------------------------*/
 
 /*Style Carrocel*/
 
-@font-face{
-    font-family: 'fonte-home';
-    src: url(../_fonte/Lobster/Lobster-Regular.ttf);
+section#home .carousel-item {
+    height: 75vh;
+    background-color: black;
 }
 
-
-section#home .carousel-inner {
-    padding-top: 0px;
-}
-
-.text-carrocel{
+.text-carrocel {
     position: absolute;
-    width:550px;
-    height: 350px;
-    left: 240px;
-    top: 120px;
+    left: 190px;
+    top: 100px;
     z-index: 100;
-    opacity: 1;
-}
-
-.text-carrocel h1{
-    text-transform: uppercase;
-    font-family: Verdana, Tahoma, sans-serif;
-    font-weight: bolder;
-    font-size: 40px;
-    color:white;
     text-align: center;
-    
-}
-
-.text-carrocel h2{
-    text-transform: uppercase;
     font-family: Verdana, Tahoma, sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    text-align: center;
     color: white;
 }
 
-.text-carrocel p{
-    font-weight: bold;
-    font-family: century;
-    font-size: 18px;
-    text-align: center;
-    color: white;
+.text-carrocel h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30pt;
+    margin-bottom: 10px;
 }
 
-.btn-carrocel{
-    padding: 5px 25px;
-    font-family:'fonte-home';
-    font-size: 27px;
-    text-align: center;
-    color:white;
-    background-color: var(--corpadrao);
+.text-carrocel h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+.text-carrocel p {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+.btn-carrocel {
+    padding: 10px 25px;
+    font-size: 18pt;
+    background-color:white;
+    color: rgb(11, 13, 37);
+    font-weight: 700;
     transition: 1s;
-    position: absolute;
-    top: 270px;
-    left: 55px;
-} 
-
-.btn-carrocel:hover{
-    background-color: white;
-    color: var(--corpadrao);
+    border-radius:50px;
 }
 
-.carousel-item img{
+.btn-carrocel:hover {
+    background-color:rgb(11, 13, 37);
+    color: white;
+    text-decoration: none;
+}
+
+.img-logo {
+    width: 350px;
+    position: absolute;
+    top: 60px;
+    right: 130px;
+    z-index: 1000;
+    opacity: 1 !important;
+}
+
+.img-opacity {
     opacity: 0.4;
-}
-
- .img-logo{
-     width: 350px;
-     position: absolute;
-     top:80px;
-     left: 800px;
-     z-index: 1000;
-     
-     opacity: 1 !important;   
-}
-
-.master{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.master:before{
-    position: absolute;
-    top:0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: " ";
-    background-color: rgb(11, 13, 37);
+    z-index: 0;
 }
 
 /*--------------------------*/
 
 /*Style Nosso Trabalho*/
 
-.nossoTrabalho{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image:linear-gradient(to bottom right, var(--LightSteelBlue), var(--corsecundaria));
-}
+section.us-work .padding-row {
+    padding: 0 5px;
+  }
 
-.nt-textDiv{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 25px;
-    text-align: center;   
+  section.us-work .img-wrapper {
+    padding: 10px;
+  }
+
+  .img-wrapper img {
+    padding: 2px;
+    transition: transform 0.5s ease;
     
-    border-radius: 0px;
-}
+  }
 
-
-
-.nt-textDiv h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 35pt;
-    color: white;
-}
-
-.nt-textDiv p{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: rgb(11, 13, 37);
-    font-size: 16pt;
-    color: white;
-}
-
-.nt-albumDeFotos {
-    margin-top: 40px;
-}
-
-.img-wrapper {
-    overflow: hidden;
-}
-
-.img-wrapper img {
-    transition: 0.5s ease;
-}
-
-.img-wrapper img:hover {
-    opacity: 0.3;
-    transform: scale(0.8);
-    cursor: zoom-in;
-}
-
-.img-wrapper i {
-    position: absolute;
-    color:var(--RoyalBlue);
-    padding: 5px 8px;
-    font-size: 22px;
-    right:6px;
-    top: 6px;
-    border: 1px solid var(--RoyalBlue);
-    border-radius: 50%;
-    transform: rotate(-25deg);
-}
-
-
-[data-animacao]{
-    opacity: 0;
-    transition: 0.8s;
-}
-
-[data-animacao ="left"]{
-    transform: translate3d(-50px, 0, 0);
-}
-
-[data-animacao ="rigth"]{
-    transform: translate3d(50px, 0, 0);
-}
-
-[data-animacao].animacao{
-    opacity: 1;
-    transform: translate3d(0px, 0, 0);
-    
-}
-
+  .img-wrapper img:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    opacity: 0.8;
+  } 
 /*--------------------------*/
 
 /*Style Seguradoras*/
+
 section.teams {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    background-color: #131633;
+    color: white;
 }
 
 section.teams h2.title {
@@ -264,22 +131,6 @@ section.teams h2.title {
 
 .team-member-info {
     padding: 10px 0 30px 0;
-}
-
-h4.team-member-name {
-    font-size: 19px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding-top: 2px;
-}
-
-h4.team-member-designation {
-    text-transform: capitalize;
-    color: #34c6d3;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 5px;
 }
 
 ul.social-list {
@@ -303,37 +154,36 @@ ul.social-list i {
     color: #64707b;
 }
 
-.seguradoras{
+.seguradoras {
     position: relative;
     width: 100%;
     height: 200px;
-
-    background-color:rgb(11, 13, 37);
+    background-color: rgb(11, 13, 37);
 }
- /*--------------------------*/
 
- /*Style Localização*/
+/*--------------------------*/
 
-.mapa{
+/*Style Localização*/
+
+.mapa {
     z-index: 10000;
 }
 
-.local{
+.local {
     width: 100%;
     height: 500px;
     z-index: 10000;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
-.local iframe{
+.local iframe {
     z-index: 10000;
 }
- /*--------------------------*/
+
+/*--------------------------*/
 
 /***************************** FOOTER *****************************/
 
