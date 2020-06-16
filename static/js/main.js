@@ -25,42 +25,29 @@ $("#team-members").owlCarousel({
     }
 });
 
-const target = document.querySelectorAll('[data-anime]');
-const animationClass = 'animate';
-
-function animeScroll(){
-    const windowtop = window.pageYOffset; /* + ((window.innerHeight * 3) / 4) */
-    target.forEach(function(element){
-        if(windowtop > element.offsetTop){
-            element.classList.add(animationClass);
-        } else{
-            element.classList.remove(animationClass);
+$(window).scroll(function () {
+    var top = $(window).scrollTop();
+    if (top >= 60) {
+        $("nav").addClass('secondary-bg')
+    }
+    else {
+        if ($("nav").hasClass('secondary-bg')) {
+            $("nav").removeClass('secondary-bg');
         }
+    }
+});
 
-        console.log(element.offsetTop);
-    })
-}
+$(document).ready(function () {
+    $('a[href^="#"].nav-btnlink').on('click', function (e) {
+        e.preventDefault();
 
+        var target = this.hash;
+        var $target = $(target);
 
-window.addEventListener('scroll', function(){
-    animeScroll();
-})
-
-
-const serv = document.querySelectorAll('[data-animacao]');
-const animacaoClass = 'animacao';
-
-function scrollDown(){
-    const pagetop = window.pageYOffset + ((window.innerHeight * 2.5)/4);
-    serv.forEach(function(elemento){
-        if(pagetop > elemento.offsetTop){
-            elemento.classList.add(animacaoClass);
-        }else{elemento.classList.remove(animacaoClass);
-        }
-        console.log(elemento.offsetTop);
-    })
-}
-
-window.addEventListener('scroll', function(){
-    scrollDown();
-})
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 100
+        }, 900, 'swing', function () {
+            window.location.hash = target - 100;
+        });
+    });
+});

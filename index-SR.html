@@ -61,6 +61,18 @@
 <body>
 
   <!-- INICIO BARRA DE MENU-->
+  <nav class="my-navbar">
+
+    <ul>
+      <li><a class="nav-btnlink" href="#home">HOME</a></li>
+      <li><a class="nav-btnlink" href="#ID-us-work">NOSSO TRABALHO</a></li>
+      <li><a class="nav-btnlink" href="#ParcSegur">SEGURADORAS</a></li>
+      <li><a class="nav-btnlink" href="#LocalMap">LOCALIZAÇÃO</a></li>
+
+    </ul>
+
+  </nav>
+
 
   <!-- FINAL BARRA DE MENU-->
 
@@ -80,7 +92,8 @@
               necessidades traz também satisfação e conforto.
             </p>
 
-            <a class="btn-carrocel" href="https://api.whatsapp.com/send?phone=5514997754650&text=Gostaria%20de%20fazer%20um%20orçamento!"
+            <a class="btn-carrocel"
+              href="https://api.whatsapp.com/send?phone=5514997754650&text=Gostaria%20de%20fazer%20um%20orçamento!"
               target="_blank">Faça um orçamento sem compromiso</a>
           </div>
           <img class="img-logo" src="static/img/img-logo-cartao.png" alt="">
@@ -217,7 +230,7 @@
 
   <!-- FINAL NOSSO TRABALHO -->
 
-  <section class="teams">
+  <section id="ParcSegur" class="teams">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
@@ -289,7 +302,7 @@
     </div>
   </section>
 
-  <section class="mapa">
+  <section id="LocalMap" class="mapa">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
@@ -323,8 +336,8 @@
               <h6>(14) 9 9775-4650</h6>
             </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=saulo-antunes1@hotmail.com"
-              target="_blank"><i class="fa fa-envelope icone-midiasocial" id="map"></i>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=saulo-antunes1@hotmail.com" target="_blank"><i
+                class="fa fa-envelope icone-midiasocial" id="map"></i>
               <h6>saulo-antunes1@hotmail.com</h6>
             </a>
           </div>
@@ -339,7 +352,11 @@
       </div>
     </div>
 
-    <a href="#home" class="icon-top"><img src="static/img/seta-top.png" alt=""></a>
+    <div class="icon-top">
+      <a class="nav-btnlink" href="#home"><i class="fas fa-arrow-alt-circle-up"></i>
+      </a>
+    </div>
+
   </footer>
 
 
