@@ -1,3 +1,5 @@
+
+
 $('.img-wrapper').magnificPopup({
     delegate: 'a',
     type: 'image',
