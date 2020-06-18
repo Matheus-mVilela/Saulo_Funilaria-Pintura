@@ -207,8 +207,32 @@ ul.social-list i {
 
 /*Style Localização*/
 
-section.mapa {
+section.mapa iframe{
     margin-bottom: -5px;
+}
+section.mapa {
+    margin-bottom: 0;
+}
+
+
+.contact-infos{
+    padding: 45px 0 30px 0;
+    background-color: darkcyan;
+}
+
+.contact-infos .fa{
+    color: white;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.contact-infos p{
+    color: white;
+    margin-top: 15px;
 }
 
 /*--------------------------*/
@@ -216,7 +240,7 @@ section.mapa {
 /***************************** FOOTER *****************************/
 
 .footer {
-    background-image: url('../img/Black-Wood-Footer-Background.jpg');
+    background-image: url('../img/dark-metal-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     padding-top: 150px;
@@ -249,6 +273,7 @@ section.mapa {
 
 .copyright {
     color: white;
+    font-size: 12pt;
 }
 
 .copyright .border-bottom {
@@ -258,11 +283,6 @@ section.mapa {
     margin: 0 auto;
     border-radius: 20px;
     margin-top: 20px;
-}
-
-.social-icon h6 {
-    color: white;
-    font-family: 'Roboto', sans-serif;
 }
 
 .icon-top {
