@@ -15,6 +15,13 @@ jQuery(document).ready(function () {
     });
 });
 
+function showNav() {
+    var element = document.getElementById("header-Id");
+    var bar = document.getElementById("bar-Id");
+    element.classList.toggle("displayblock");
+    bar.classList.toggle("colorwhite");
+}
+
 
 $('.img-wrapper').magnificPopup({
     delegate: 'a',
