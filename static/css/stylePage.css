@@ -162,7 +162,7 @@ section#home .carousel-item {
 }
 
 @media(max-width:700px) {
-    img.img-opacity{
+    img.img-opacity {
         display: none !important;
     }
     img.mobile-img {
@@ -184,6 +184,7 @@ section#home .carousel-item {
         bottom: 10px;
     }
 }
+
 @media(max-width:700px) {
     .text-carrocel {
         top: 20px;
@@ -192,22 +193,26 @@ section#home .carousel-item {
         width: 200px;
     }
 }
+
 @media(max-width:580px) {
-    .img-logo{
+    .img-logo {
         width: 150px;
     }
 }
+
 @media(max-width:414px) {
-    .btn-carrocel{
+    .btn-carrocel {
         font-size: 10pt;
         padding: 5px 10px;
     }
 }
+
 @media(max-width:360px) {
-    .btn-carrocel{
+    .btn-carrocel {
         font-size: 8pt;
     }
 }
+
 /*--------------------------*/
 
 /*Style Nosso Trabalho*/
