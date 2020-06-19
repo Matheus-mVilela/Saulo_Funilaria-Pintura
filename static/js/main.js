@@ -63,3 +63,5 @@ $(window).scroll(function () {
         }
     }
 });
+
+new WOW().init();
