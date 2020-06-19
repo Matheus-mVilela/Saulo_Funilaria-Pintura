@@ -55,11 +55,11 @@ $("#team-members").owlCarousel({
 $(window).scroll(function () {
     var top = $(window).scrollTop();
     if (top >= 60) {
-        $("nav").addClass('secondary-bg')
+        $("header").addClass('secondary-bg')
     }
     else {
-        if ($("nav").hasClass('secondary-bg')) {
-            $("nav").removeClass('secondary-bg');
+        if ($("header").hasClass('secondary-bg')) {
+            $("header").removeClass('secondary-bg');
         }
     }
 });

@@ -66,7 +66,7 @@
     header {
       background-color: transparent;
       position: fixed;
-      z-index: 10;
+      z-index: 10000;
       width: 100%;
       color: #fff;
       padding: 25px 0px 15px;
@@ -76,8 +76,9 @@
     }
 
     .secondary-bg {
-      background-color: rgba(0, 0, 0, .7);
+      background-color: #131633;
       transition: 0.5s ease-out;
+      border-bottom: 1px solid white;
     }
 
     header a {
@@ -142,10 +143,11 @@
 
       header {
         display: none;
-        background-color: rgba(0, 0, 0, .7);
+        background-color: #131633;
         text-align: center;
         flex-direction: column;
         padding: 10px 50px 0px 50px;
+        z-index: 1000;
       }
 
       header nav ul {
@@ -158,6 +160,24 @@
 
       .colorwhite {
         color: white;
+      }
+    }
+
+    @media(max-width:670px) {
+      header {
+        border-bottom: 1px solid white;
+      }
+      header nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+
+      header nav li {
+        margin: 0 0 10px 0;
+      }
+
+      header nav li:last-child {
+        margin: 0;
       }
     }
 
@@ -221,7 +241,7 @@
           </div>
           <img class="img-logo" src="static/img/img-logo-contato.png" alt="">
           <img src="static/img/img_carro_batido.png" class="d-block w-100 img-opacity" alt="...">
-          <img src="static/img/mobile-cr-1.jpg" class="d-block w-100 mobile-img" alt="...">
+          <img src="static/img/mobile-cr-2.jpg" class="d-block w-100 mobile-img" alt="...">
         </div>
 
         <div class="carousel-item">
@@ -237,7 +257,7 @@
           </div>
           <img class="img-logo" src="static/img/img-selodequalidade.png" alt="">
           <img src="static/img/img-qualidadecarro.png" class="d-block w-100 img-opacity" alt="...">
-          <img src="static/img/mobile-cr-1.jpg" class="d-block w-100 mobile-img" alt="...">
+          <img src="static/img/mobile-cr-3.jpg" class="d-block w-100 mobile-img" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
