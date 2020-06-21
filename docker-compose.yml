@@ -9,9 +9,9 @@ services:
         volumes: 
             - ./app:/app
         environment:
-            VIRTUAL_HOST: srfunilariaepintura.com
-            VIRTUAL_HOST_ALIAS: srfunilariaepintura.com
-            LETSENCRYPT_HOST: srfunilariaepintura.com
+            VIRTUAL_HOST: srfunilaria.com
+            VIRTUAL_HOST_ALIAS: www.srfunilaria.com,srfunilaria.com
+            LETSENCRYPT_HOST: srfunilaria.com
             LETSENCRYPT_EMAIL: matheus_vilela@icloud.com
         networks:
             - nginx-gateway
