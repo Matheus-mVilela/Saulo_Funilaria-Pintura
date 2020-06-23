@@ -357,6 +357,17 @@ section.mapa {
     transform: rotate(360deg);
 }
 
+.icone-midiasocial-small{
+    color: white;
+    font-size: 20pt;
+    transition: 0.3s;
+}
+
+.icone-midiasocial-small:hover{
+    color: deepskyblue;
+    font-size: 25pt;
+}
+
 .copyright {
     color: white;
     font-size: 12pt;
