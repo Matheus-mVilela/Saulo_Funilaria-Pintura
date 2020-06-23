@@ -5,7 +5,7 @@ Site de divulgação para Saulo e Rubinho Funilararia e Pintura.
 Passos simples para entrar no servidor e atualizar o projeto
 
 ```
-$ ssh root@138.68.17.150
+$ ssh root@srfunilaria.com
 ```
 ## Listar as pastas
 ```
